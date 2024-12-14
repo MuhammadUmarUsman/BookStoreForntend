@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Bookstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+     crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</head>
+<body> 
+    <header>
+        <!-- <h1 id="header-h1">Welcome to my Online Bookstore!!</h1> -->
+        <div id="header-items-container">
+        <nav id="header-nav">
+            <ul id="header-nav-list">
+                <li class="nav-list-items"><a href="#"><i class="fa-solid fa-house icon-size"></i>&ensp; Home</a></li>
+                <li class="nav-list-items"><a href="#book-section"><i class="fa-solid fa-book icon-size"></i>&ensp; Books</a></li>
+                <li class="nav-list-items"><a href="#about-us"><i class="fa-solid fa-person icon-size"></i>&ensp; About</a></li>
+                <li class="nav-list-items"><a href="#customer-reviews"><i class="fa-solid fa-clipboard icon-size"></i>&ensp; Reviews</a></li>
+                <li class="nav-list-items"><a href="#contact-us-section"><i class="fa-solid fa-envelope icon-size"></i>&ensp; Contact</a></li>
+        </nav>
+        
+        <div id="header-options">
+            <p class="header-option-items"><a><i class="fa-solid fa-user "></i>&ensp; Login</a> / <a class="main-button-style">Signup</a></p>
+            <!-- <p><i class="fa-solid fa-cart-shopping icon-size"></i></p> -->
+        </div>
+        <div id="search-div">
+            <i class="fas fa-search"></i><input type="text" id="search-input" placeholder="Search books...">
+            <!-- <button id="search-button "><i class="fas fa-search"></i></button> -->
+        </ul></div>
+    </div>
+    </header>
+    <Main>
+        <section id="Webpage-intro">
+            <h1 id="webpage-intro-heading">Welcome to Book Heaven: Your Online Bookstore</h1>
+            <p id="webpage-intro-paragraph">At Book Heaven, we believe in the transformative power of books. Our mission is to bring the joy of reading to everyone, offering a vast selection of genres to suit every taste.</p>
+            <button class="main-button-style btn-big-size">Signup</button>
+        </section>
+        
+        <section id="featured-books">
+            <div id="fb-text-container"> 
+                <h2 class="section-heading">Featured Books</h2>
+                <p class="section-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in modi maiores rem consequatur, id sapiente quae enim porro delectus molestias voluptas quia vero, tempora ab unde pariatur cum!</p>
+                <a class="main-links-style" href="#">explore ></a>
+            </div>
+           <div id="fb-img-container">
+            <img id="featured-books-img" src="Images/featured.jpg"/>
+           </div>
+        </section>
+        <section id="about-us">
+            <div id="aboutus-image-container">
+                <img id="aboutus-img" src="Images/lib.jpg"/>
+            </div>
+            <div id="aboutus-text-container">
+                <h2 class="section-heading">About Us</h2>
+                 <p class="section-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex, sed modi suscipit dicta ducimus minima mollitia alias consectetur debitis laboriosam? Modi aut facilis quisquam repellendus recusandae eius totam animi assumenda necessitatibus vitae, inventore, et, ut soluta nihil voluptatibus fugiat vel? Alias magnam in deserunt tenetur a eaque facilis doloribus.</p>
+                 <a class="main-links-style" href="#">More about us ></a>
+            </div>
+        </section>
+
+        <section id="book-section">
+            <h2 class="section-heading">Books</h2>
+            <div id="books-container"></div>
+            <button id="load-books" class="main-button-style">Load More Books</button>
+        </section>
+
+        <section id="add-book-section">
+            <h2 class="section-heading">Add a book</h2>
+            <form id="add-book-form" class="contact-us-form-container">
+                <label for="title">Title:</label><input id="title-to-add" name="title" type="text"/>
+                <label for="author">Author:</label><input id="author-to-add" name="author" type="text"/>
+                <label for="price">Price:($)</label><input id="price-to-add" name="price" type="text"/>
+                <label for="imageurl">ImageURL:</label><input id="image-to-add" name="imageurl" type="text"/>
+                <label for="description">Description:</label><textarea id="description-to-add" name="description" type="text" ></textarea>
+                <button id="add-book-button" class="main-button-style">Add Book</button>
+            </form>
+            
+        </section>
+
+        <section id="customer-reviews">
+            <div id="customer-review-text">
+                <h2 class="section-heading-white">Customer Reviews</h2>
+                <!-- <h3 class="section-heading">Top Reviews</h3> -->
+            </div>
+            <div id="customer-reviews-container">
+                <div class="review">
+                    <img class="review-image" src="Images/person-1.jpg"/>
+                    <h3 class="review-info">Lorem, ipsum dolor.</h3>
+                    <p class="review-stars"><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i></p>
+                    <p class="review-text">Lorem ipsum dolor amet consectetur adipisicing....</p>
+                </div>
+                <div class="review">
+                    <img class="review-image" src="Images/person-2.jpg"/>
+                    <h3 class="review-info">Lorem, ipsum dolor.</h3>
+                    <p class="review-stars"><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i></p>
+                    <p class="review-text">Lorem ipsum dolor amet consectetur adipisicing....</p>
+                </div>
+                <div class="review">
+                    <img class="review-image" src="Images/person-3.jpg"/>
+                    <h3 class="review-info">Lorem, ipsum dolor.</h3>
+                    <p class="review-stars"><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i></p>
+                    <p class="review-text">Lorem ipsum dolor amet consectetur adipisicing....</p>
+                </div>
+                <div class="review">
+                    <img class="review-image" src="Images/person-4.jpg"/>
+                    <h3 class="review-info">Lorem, ipsum dolor.</h3>
+                    <p class="review-stars"><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i></p>
+                    <p class="review-text">Lorem ipsum dolor amet consectetur adipisicing....</p>
+                </div>
+                <div class="review">
+                    <img class="review-image" src="Images/person-5.jpg"/>
+                    <h3 class="review-info">Lorem, ipsum dolor.</h3>
+                    <p class="review-stars"><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i><i class="fa-solid fa-star review-star"></i></p>
+                    <p class="review-text">Lorem ipsum dolor amet consectetur adipisicing....</p>
+                </div>
+            </div>
+            <div>
+                <a class="main-links-style-white" href="#">More Reviews ></a>
+            </div>
+        </section>
+
+        <!-- <section id="book-list">
+            <div id="book-list-text">
+                <h2 class="section-heading" >Book List &ensp;<i class="fa-solid fa-book"></i></h2>
+                <p class="section-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae distinctio tempore quisquam eveniet praesentium optio? Repellat dicta amet praesentium commodi quidem vel.</p>
+            </div>
+            
+            <table id="book-list-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Book Title 1</td>
+                        <td>Author 1</td>
+                        <td>$7.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 2</td>
+                        <td>Author 2</td>
+                        <td>$8.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 3</td>
+                        <td>Author 3</td>
+                        <td>$9.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 4</td>
+                        <td>Author 4</td>
+                        <td>$10.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 5</td>
+                        <td>Author 5</td>
+                        <td>$11.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 6</td>
+                        <td>Author 6</td>
+                        <td>$12.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 7</td>
+                        <td>Author 7</td>
+                        <td>$13.99</td>
+                        <td><button class="main-button-style">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 8</td>
+                        <td>Author 8</td>
+                        <td>$14.99</td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 9</td>
+                        <td>Author 9</td>
+                        <td>$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Book Title 10</td>
+                        <td>Author 10</td>
+                        <td>$16.99</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><a id="more-books-link" href="#">More Books ></a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </section> -->
+
+        <section id="contact-us-section">
+            <div id="contact-us-image-container">
+                <img id="contact-us-img" src="Images/contact2.jpg"/>
+            </div>
+            <div class="contact-us-form-container">
+            <h2 class="section-heading">Contact Us</h2>
+                <form action="#" class="contact-us-form">
+                    <label for="name">Enter your name</label>
+                    <input name="name" id="name" type="text" placeholder="Enter name"/>
+                    <label for="email">Enter your email</label>
+                    <input name="email" id="email" type="email" placeholder="Enter email"/>
+                    <div class="gender-info">
+                        <input id="male" type="radio" name="gender" />
+                        <label for="male">Male</label>
+                        <input id="female" type="radio" name="gender" />
+                        <label for="female">Female</label>
+                        <input id="others" type="radio" name="gender" />
+                        <label for="others">Others</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button class="main-button-style" type="submit">Submit</button>
+                </form>
+            </div>
+            
+        </section>
+
+    </Main>
+
+    <footer>
+        <p>© 2024 My Online Bookstore</p>
+    </footer>
+</body>
+</html>
